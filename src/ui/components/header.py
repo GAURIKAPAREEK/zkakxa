@@ -44,8 +44,9 @@ def render_header(
     menu_open = st.session_state.get("mobile_menu_open", False)
 
     st.markdown('<div class="ui-hdr-anchor" aria-hidden="true"></div>', unsafe_allow_html=True)
-    # Four groups on the same row: brand | nav (desktop) | actions (desktop) | hamburger (mobile)
-    # CSS collapses nav+actions on small screens and reveals the hamburger.
+    # Four groups on the same row: brand | nav (desktop) | actions (theme+profile+logout) | hamburger (mobile)
+    # On mobile CSS hides only the desktop nav column and the logout button; theme + profile remain
+    # visible next to the hamburger.
     brand_c, nav_c, actions_c, burger_c = st.columns(
         [1, 1.15, 1, 0.35],
         gap="small",
@@ -104,6 +105,11 @@ def render_header(
 """,
                     unsafe_allow_html=True,
                 )
+                # Mobile-only logout inside profile popover (desktop logout button is separate)
+                if st.button("Logout", key="ui_logout_btn_profile", type="secondary", use_container_width=True):
+                    from src.auth import logout_user
+
+                    logout_user()
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
                 from src.auth import logout_user
@@ -117,7 +123,9 @@ def render_header(
             _toggle_mobile_menu()
             st.rerun()
 
-    # Mobile dropdown panel — only rendered when open. CSS hides it on ≥ 768px.
+    # Mobile dropdown panel — only rendered when open. Contains ONLY the 3 nav links.
+    # Profile info, theme toggle, and logout stay in the header row (theme + profile visible on
+    # mobile; logout accessible from inside the profile popover).
     if menu_open:
         st.markdown('<div class="ui-mobile-panel" aria-hidden="true"></div>', unsafe_allow_html=True)
         for page_id, label in NAV_PAGES:
@@ -131,23 +139,3 @@ def render_header(
             ):
                 if not is_active:
                     _set_page(page_id)
-
-        st.markdown(
-            f"""
-<div class="ui-mobile-user">
-  <div class="ui-profile-avatar">{html.escape(initials)}</div>
-  <div class="ui-mobile-user-body">
-    <p class="ui-profile-name">{html.escape(safe_name)}</p>
-    <p class="ui-profile-meta">{html.escape(display_email)}</p>
-    <p class="ui-profile-meta">@{html.escape(username or "user")}</p>
-  </div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )
-
-        render_theme_toggle("mobile_theme")
-        if st.button("Logout", key="ui_logout_btn_mobile", type="secondary", use_container_width=True):
-            from src.auth import logout_user
-
-            logout_user()
