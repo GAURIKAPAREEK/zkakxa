@@ -108,8 +108,10 @@ def render_header(
                     from src.auth import logout_user
 
                     logout_user()
+        import streamlit as st
         with theme_c:
-            render_theme_toggle(theme_key)
+             if not st.session_state.get("is_mobile", False):
+                  render_theme_toggle(theme_key)
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
                 from src.auth import logout_user
@@ -140,6 +142,9 @@ def render_header(
             ):
                 if not is_active:
                     _set_page(page_id)
+       st.divider()
+       st.markdown("### Appearance")
+       render_theme_toggle("mobile_theme_toggle")
 
         # 4th option — Change theme (destination icon: sun for light, moon for dark)
         is_dark = st.session_state.get("theme", "dark") == "dark"
