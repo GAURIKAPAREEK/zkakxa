@@ -229,20 +229,9 @@ def _brand_panel() -> None:
   <div class="ui-auth-brand-logo ui-auth-enter ui-auth-enter--1">{brand_html("md", animated=True, glow=True, light_text=True)}</div>
   <h1 class="ui-auth-headline ui-auth-enter ui-auth-enter--2">Turning Every Dataset into a Trusted Asset.</h1>
   <p class="ui-auth-lede ui-auth-enter ui-auth-enter--3">
-    DataSentinel automates data validation, profiling, anomaly detection, schema monitoring,
-    and quality reporting—helping organizations build reliable data pipelines and make
-    confident, data-driven decisions.
+    DataSentinel automates validation, profiling, and anomaly detection — turning raw files 
+    into clean, trusted data in minutes.
   </p>
-
-  <div class="ui-auth-how-box ui-auth-enter ui-auth-enter--4" aria-label="How it works">
-    <p class="ui-auth-how-title"><span class="ui-auth-how-gear" aria-hidden="true">⚙</span> How it works</p>
-    <ol class="ui-auth-how-list">
-      <li><span class="ui-auth-how-n">1</span><span>Upload your raw dataset (CSV, JSON, or Excel) securely.</span></li>
-      <li><span class="ui-auth-how-n">2</span><span>The pipeline profiles columns and runs quality checks automatically.</span></li>
-      <li><span class="ui-auth-how-n">3</span><span>Invalid rows are isolated into quarantine, leaving only clean data.</span></li>
-      <li><span class="ui-auth-how-n">4</span><span>Track performance metrics, anomalies, and schema drift history.</span></li>
-    </ol>
-  </div>
 
   <div class="ui-auth-features" role="list">
     <div class="ui-auth-feat ui-auth-enter ui-auth-enter--5" role="listitem">
