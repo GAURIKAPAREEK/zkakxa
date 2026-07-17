@@ -983,7 +983,7 @@ def _header() -> str:
         height: auto !important;
         max-height: none !important;
     }}
-    .ui-wordmark {{ display: inline-block !important; font-size: 15px !important; }}
+    .ui-wordmark {{ display: none; }}
 }}
 
 /* Last-wins — keep theme ghost icon fully visible + sized */
@@ -1026,129 +1026,6 @@ def _header() -> str:
     min-height: 44px !important;
     max-height: 44px !important;
     transform: none !important;
-}}
-
-/* ============================================================
-   Responsive header — hamburger for mobile / tablet
-   ============================================================ */
-
-/* Hamburger column: hidden on desktop, shown on mobile */
-.ui-hdr-burger {{ display: none; }}
-.block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:has(.ui-hdr-burger),
-.block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:has(.ui-hdr-burger) {{
-    display: none !important;
-    flex: 0 0 0 !important;
-    width: 0 !important;
-    min-width: 0 !important;
-    max-width: 0 !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}}
-
-/* Mobile menu panel container */
-.ui-mobile-panel {{ display: none; }}
-
-/* Tablet / phone breakpoint */
-@media (max-width: 900px) {{
-    /* Compact the header bar */
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) {{
-        padding: 10px 14px !important;
-        gap: 8px !important;
-        column-gap: 8px !important;
-        min-height: 60px !important;
-        flex-wrap: nowrap !important;
-    }}
-
-    /* Hide desktop nav column */
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:nth-child(2),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:nth-child(2) {{
-        display: none !important;
-        flex: 0 0 0 !important;
-        width: 0 !important;
-        min-width: 0 !important;
-        max-width: 0 !important;
-        overflow: hidden !important;
-    }}
-
-    /* Keep desktop actions column (theme + profile) visible on mobile;
-       shrink it so it fits next to the hamburger. */
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:nth-child(3),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:nth-child(3) {{
-        flex: 0 0 auto !important;
-        width: auto !important;
-        min-width: 0 !important;
-        max-width: none !important;
-    }}
-
-    /* Hide the standalone Logout button on mobile (logout is available inside the profile popover).
-       Match only the exact desktop-logout key so ui_logout_btn_profile stays visible in the popover. */
-    .block-container:has(.ui-hdr-anchor) .st-key-ui_logout_btn {{
-        display: none !important;
-    }}
-
-    /* Show hamburger column */
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:nth-child(4),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:nth-child(4) {{
-        display: flex !important;
-        flex: 0 0 auto !important;
-        justify-content: flex-end !important;
-        width: auto !important;
-        min-width: 44px !important;
-        max-width: none !important;
-    }}
-
-    /* Hamburger button styling */
-    .block-container:has(.ui-hdr-anchor) [class*="st-key-ui_burger_btn"] button {{
-        width: 44px !important;
-        min-width: 44px !important;
-        height: 44px !important;
-        padding: 0 !important;
-        font-size: 22px !important;
-        line-height: 1 !important;
-        border-radius: 12px !important;
-    }}
-
-    /* Brand shrinks a touch */
-    .ui-wordmark {{ font-size: 17px !important; }}
-
-    /* Mobile dropdown marker — invisible; only used by :has() selectors to style nav buttons. */
-    .ui-mobile-panel {{
-        display: block;
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: 0 !important;
-        background: transparent !important;
-        box-shadow: none !important;
-    }}
-    /* Also collapse the Streamlit element-container that wraps the marker so it adds no gap. */
-    .block-container:has(.ui-hdr-anchor) [data-testid="stMarkdownContainer"]:has(> .ui-mobile-panel),
-    .block-container:has(.ui-hdr-anchor) [data-testid="element-container"]:has(.ui-mobile-panel) {{
-        margin: 0 !important;
-        padding: 0 !important;
-        min-height: 0 !important;
-        height: 0 !important;
-    }}
-
-    /* Tight, evenly-spaced nav buttons in the hamburger panel — no leading gap. */
-    .block-container:has(.ui-mobile-panel) [class*="st-key-mnav_"] {{
-        margin: 0 0 8px 0 !important;
-    }}
-    .block-container:has(.ui-mobile-panel) [class*="st-key-mnav_"]:last-of-type {{
-        margin-bottom: 4px !important;
-    }}
-}}
-
-/* Small phones */
-@media (max-width: 480px) {{
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) {{
-        padding: 8px 10px !important;
-        min-height: 54px !important;
-    }}
-    .ui-wordmark {{ font-size: 15px !important; }}
-    .ui-brand-link svg {{ width: 24px !important; height: 24px !important; }}
-    .block-container:has(.ui-hdr-anchor) {{ padding-left: 8px !important; padding-right: 8px !important; }}
 }}
 """
 
@@ -1359,114 +1236,6 @@ def _dashboard() -> str:
 }}
 [data-testid="stAlert"] {{ margin: {SP[12]}px 0 !important; }}
 [data-testid="stDownloadButton"] {{ margin-top: {SP[8]}px !important; }}
-
-/* =========================================================
-   Global responsive layer — makes stat grids, chart columns,
-   tables, and page padding survive tablet / phone widths.
-   ========================================================= */
-
-/* Tablet: collapse forced-4 stat grids to 2 across, forced-2 chart columns keep side-by-side. */
-@media (max-width: 900px) {{
-    /* Reduce outer page padding on tablet */
-    .block-container {{
-        padding-left: 18px !important;
-        padding-right: 18px !important;
-        padding-top: 12px !important;
-    }}
-
-    /* Stat cards: 4-up → 2-up on tablet by allowing wrap. */
-    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) {{
-        flex-wrap: wrap !important;
-        row-gap: 12px !important;
-    }}
-    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="column"],
-    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="stColumn"] {{
-        flex: 1 1 calc(50% - 8px) !important;
-        width: calc(50% - 8px) !important;
-        min-width: calc(50% - 8px) !important;
-        max-width: 100% !important;
-    }}
-}}
-
-/* Phone: force single column for everything Streamlit renders as st.columns(). */
-@media (max-width: 640px) {{
-    .block-container {{
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-        padding-top: 8px !important;
-    }}
-
-    /* Any horizontal block that ISN'T the header brand row wraps to a stack.
-       (Header row keeps flex-nowrap via its own rule that has higher specificity.) */
-    [data-testid="stAppViewContainer"] div[data-testid="stHorizontalBlock"]:not(:has(.ui-brand)) {{
-        flex-wrap: wrap !important;
-        row-gap: 12px !important;
-    }}
-    [data-testid="stAppViewContainer"] div[data-testid="stHorizontalBlock"]:not(:has(.ui-brand)) > [data-testid="column"],
-    [data-testid="stAppViewContainer"] div[data-testid="stHorizontalBlock"]:not(:has(.ui-brand)) > [data-testid="stColumn"] {{
-        flex: 1 1 100% !important;
-        width: 100% !important;
-        min-width: 100% !important;
-        max-width: 100% !important;
-    }}
-
-    /* Stat cards: 2-up → 1-up. */
-    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="column"],
-    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="stColumn"] {{
-        flex: 1 1 100% !important;
-        width: 100% !important;
-        min-width: 100% !important;
-    }}
-    .ui-stat {{ min-height: 84px; padding: 14px 16px; }}
-    .ui-stat-value, [data-testid="stMarkdownContainer"] .ui-stat-value {{ font-size: 22px; }}
-
-    /* Hero heading scale down */
-    .ui-hero-title {{ font-size: 22px !important; line-height: 1.25 !important; }}
-    .ui-hero-lede {{ font-size: 14px !important; }}
-    .ui-hero {{ padding: 14px 16px !important; }}
-
-    /* Section titles */
-    .ui-section h3 {{ font-size: 20px !important; }}
-
-    /* Tables: drop the 480px min-width so the whole row fits without side scrolling. */
-    .ui-table-wrap {{
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }}
-    .ui-table {{ min-width: 0 !important; font-size: 12px; }}
-    .ui-table thead th {{ padding: 10px 10px; font-size: 10.5px; letter-spacing: 0.04em; }}
-    .ui-table tbody td {{ padding: 10px 10px; word-break: break-word; }}
-
-    /* Plotly charts: shrink height so they don't dominate the screen */
-    [data-testid="stPlotlyChart"], .js-plotly-plot, .plot-container {{
-        width: 100% !important;
-        min-width: 0 !important;
-    }}
-    [data-testid="stPlotlyChart"] {{ height: 280px !important; }}
-    .js-plotly-plot, .plot-container .svg-container {{ height: 280px !important; }}
-
-    /* File uploader: keep dropzone inside viewport */
-    [data-testid="stFileUploader"] section {{ padding: 14px !important; }}
-    [data-testid="stFileUploaderDropzone"] {{ padding: 18px 12px !important; text-align: center; }}
-
-    /* Expander padding tighter */
-    [data-testid="stExpander"] [data-testid="stExpanderDetails"] {{ padding: 10px !important; }}
-
-    /* Prevent page-wide horizontal scroll from stray wide children */
-    html, body, [data-testid="stAppViewContainer"] {{
-        overflow-x: hidden !important;
-        max-width: 100vw !important;
-    }}
-}}
-
-/* Very small phones */
-@media (max-width: 420px) {{
-    .ui-hero-title {{ font-size: 20px !important; }}
-    .ui-stat-value, [data-testid="stMarkdownContainer"] .ui-stat-value {{ font-size: 20px; }}
-    .ui-table thead th, .ui-table tbody td {{ padding: 8px 8px !important; font-size: 11px !important; }}
-    [data-testid="stPlotlyChart"] {{ height: 240px !important; }}
-    .js-plotly-plot, .plot-container .svg-container {{ height: 240px !important; }}
-}}
 """
 
 
@@ -1853,6 +1622,88 @@ def _auth() -> str:
 """
 
 
+def _mobile_fixes() -> str:
+    """Last-wins overrides: forces real stacking on phones/tablets without
+    touching desktop layout. Kept in its own section so it always loads
+    after every other rule in the cascade."""
+    return """
+/* ============ GLOBAL: kill any horizontal scroll/crop on phones ============ */
+html, body {
+    overflow-x: hidden !important;
+}
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+.block-container {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
+
+/* ============ AUTH (login/signup) screen — force real stacking ============ */
+@media (max-width: 900px) {
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > [data-testid="column"],
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > [data-testid="stColumn"],
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > div:first-child,
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > div:last-child {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+        flex-basis: 100% !important;
+        min-width: 0 !important;
+    }
+    /* Login form card sits below the brand panel, not beside it */
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > [data-testid="column"]:nth-child(1),
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > [data-testid="stColumn"]:nth-child(1) {
+        order: 1 !important;
+    }
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > [data-testid="column"]:nth-child(2),
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > [data-testid="stColumn"]:nth-child(2) {
+        order: 2 !important;
+        margin-top: 4px !important;
+    }
+    .ui-auth-brand { height: auto !important; }
+}
+
+/* ============ HEADER — stop sun/moon icon overlapping the wordmark ============ */
+@media (max-width: 640px) {
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) {
+        flex-wrap: wrap !important;
+        row-gap: 10px !important;
+        column-gap: 0 !important;
+    }
+    /* Row 1: brand/logo takes the full width on its own line */
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:nth-child(1),
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:nth-child(1) {
+        order: 1 !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+    /* Row 2: nav tabs (if any) */
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:nth-child(2),
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:nth-child(2) {
+        order: 3 !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+    /* Row 2 (right-aligned): theme toggle, profile, logout — pushed clear of the wordmark */
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="column"]:nth-child(3),
+    .block-container:has(.ui-hdr-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-brand) > [data-testid="stColumn"]:nth-child(3) {
+        order: 2 !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        justify-content: flex-end !important;
+    }
+    .ui-wordmark {
+        display: inline-block !important;
+        font-size: 15px !important;
+    }
+}
+"""
+
+
 def build_global_css(*, login: bool = False) -> str:
     from src.ui.logo import LOGO_CSS
 
@@ -1867,4 +1718,5 @@ def build_global_css(*, login: bool = False) -> str:
         _ctrl_buttons(),
     ]
     sections.append(_auth() if login else _header())
+    sections.append(_mobile_fixes())
     return "<style>\n" + "\n".join(sections) + "\n</style>"
