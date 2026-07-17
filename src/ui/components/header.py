@@ -139,3 +139,15 @@ def render_header(
             ):
                 if not is_active:
                     _set_page(page_id)
+
+        # 4th option: Theme toggle
+        is_dark = st.session_state.get("theme", "dark") == "dark"
+        theme_btn_label = "Theme (Light Mode) ☀️" if is_dark else "Theme (Dark Mode) 🌙"
+        if st.button(
+            theme_btn_label,
+            key="mnav_theme_toggle",
+            type="secondary",
+            use_container_width=True,
+        ):
+            st.session_state.theme = "light" if is_dark else "dark"
+            st.rerun()
