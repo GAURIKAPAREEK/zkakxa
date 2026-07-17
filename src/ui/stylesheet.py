@@ -1736,19 +1736,50 @@ def _responsive() -> str:
         text-align: left !important;
         margin-bottom: 6px !important;
     }
-    /* Wordmark: hidden inside header (moved below hero) */
-    .ui-wordmark { display: none !important; }
+    /* Wordmark: show in top header on mobile */
+    .ui-wordmark {
+        display: inline-block !important;
+        font-size: 16px !important;
+    }
     .ui-mobile-wordmark {
+        display: none !important;
+    }
+    /* Hide theme toggle in header on mobile */
+    .block-container:has(.ui-hdr-anchor) [class*="st-key-hdr_theme"],
+    .block-container:has(.ui-hdr-anchor) [class*="stKey-hdr_theme"],
+    .block-container:has(.ui-hdr-anchor) [class*="st-key-ui_theme_toggle"],
+    .block-container:has(.ui-hdr-anchor) [class*="stKey-ui_theme_toggle"] {
+        display: none !important;
+    }
+    /* Stack the Upload and Activity panels on mobile/tablet */
+    .block-container div[data-testid="stHorizontalBlock"]:has(.ui-panel-anchor) {
         display: flex !important;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin: 4px 0 14px;
-        font-family: 'Outfit', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        color: var(--ui-text);
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+    .block-container div[data-testid="stHorizontalBlock"]:has(.ui-panel-anchor) > [data-testid="column"],
+    .block-container div[data-testid="stHorizontalBlock"]:has(.ui-panel-anchor) > [data-testid="stColumn"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        flex: none !important;
+    }
+    /* Stat Grid responsiveness: wrap cards on mobile/tablet */
+    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) {
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+    }
+    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="column"],
+    .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="stColumn"] {
+        flex: 1 1 calc(50% - 12px) !important;
+        min-width: calc(50% - 12px) !important;
+    }
+    @media (max-width: 600px) {
+        .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="column"],
+        .block-container:has(.ui-stat-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-stat) > [data-testid="stColumn"] {
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+        }
     }
 
     /* --- Blue hero card: never clip; show full detail on mobile --- */
