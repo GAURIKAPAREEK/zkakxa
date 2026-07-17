@@ -110,8 +110,7 @@ def render_header(
                     logout_user()
         import streamlit as st
         with theme_c:
-             if not st.session_state.get("is_mobile", False):
-                  render_theme_toggle(theme_key)
+             render_theme_toggle(theme_key)
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
                 from src.auth import logout_user
