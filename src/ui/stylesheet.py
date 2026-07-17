@@ -1910,7 +1910,121 @@ div[data-baseweb="popover"] .ui-profile-label,
     .ui-auth-features { overflow: visible !important; }
     .ui-auth-feat { overflow: visible !important; height: auto !important; }
 }
+
+/* =====================================================================
+   MOBILE / TABLET FINAL POLISH — auth blue box + How-it-works centering
+   ===================================================================== */
+
+/* Auth page (login + forgot + signup + reset): let the whole page scroll
+   and give the blue brand panel enough room to render every feature
+   card, including Monitor, on phones/tablets. */
+@media (max-width: 900px) {
+    [data-testid="stAppViewContainer"]:has(.ui-auth-anchor),
+    [data-testid="stAppViewContainer"]:has(.ui-auth-anchor) [data-testid="stMain"] {
+        height: auto !important;
+        min-height: 100vh !important;
+        max-height: none !important;
+        overflow: auto !important;
+    }
+    .block-container:has(.ui-auth-anchor) {
+        height: auto !important;
+        min-height: 100vh !important;
+        max-height: none !important;
+        overflow: visible !important;
+        justify-content: flex-start !important;
+        padding: 18px 14px 28px !important;
+    }
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > div:first-child,
+    .block-container:has(.ui-auth-anchor) div[data-testid="stHorizontalBlock"]:has(.ui-auth-brand) > div:last-child {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    .ui-auth-brand {
+        height: auto !important;
+        overflow: visible !important;
+        padding: 22px 20px !important;
+    }
+    /* Keep the 2×2 feature grid but let each card grow so text never clips. */
+    .ui-auth-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        margin-top: 14px !important;
+    }
+    .ui-auth-feat {
+        min-height: 0 !important;
+        padding: 12px 12px !important;
+    }
+    .ui-auth-headline { font-size: clamp(20px, 4.8vw, 26px) !important; }
+    .ui-auth-lede { font-size: 13px !important; }
+    .ui-auth-foot { margin-top: 20px !important; }
+}
+@media (max-width: 520px) {
+    /* On very small phones stack features into a single column so every one
+       (including Monitor) is fully visible without horizontal squeeze. */
+    .ui-auth-features { grid-template-columns: 1fr !important; }
+    .block-container:has(.ui-auth-anchor) { padding: 14px 12px 24px !important; }
+    .ui-auth-brand { padding: 18px 16px !important; }
+}
+
+/* How-it-works: fully centered, evenly aligned layout on tablet + mobile.
+   Cards stay full-width in a single column with the number + text block
+   centered as a unit so the section no longer looks lopsided. */
+@media (max-width: 1000px) {
+    .ui-how {
+        text-align: center !important;
+        padding: 18px 16px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .ui-how-kicker {
+        text-align: center !important;
+        display: block !important;
+    }
+    .ui-how-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        justify-items: stretch !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+    }
+    .ui-how-step {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .ui-how-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        width: 100% !important;
+    }
+    .ui-how-num {
+        text-align: center !important;
+        padding-top: 0 !important;
+        font-size: 13px !important;
+    }
+    .ui-how-body {
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .ui-how-title,
+    .ui-how-desc { text-align: center !important; }
+}
+@media (max-width: 640px) {
+    .ui-how-grid { grid-template-columns: 1fr !important; }
+    .ui-how-step { min-height: 0 !important; padding: 16px 18px !important; }
+}
 """
+
 
 
 def build_global_css(*, login: bool = False) -> str:
