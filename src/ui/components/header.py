@@ -105,11 +105,7 @@ def render_header(
 """,
                     unsafe_allow_html=True,
                 )
-                # Mobile-only logout inside profile popover (desktop logout button is separate)
-                if st.button("Logout", key="ui_logout_btn_profile", type="secondary", use_container_width=True):
-                    from src.auth import logout_user
 
-                    logout_user()
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
                 from src.auth import logout_user
@@ -151,3 +147,13 @@ def render_header(
         ):
             st.session_state.theme = "light" if is_dark else "dark"
             st.rerun()
+
+        # 5th option: Logout
+        if st.button(
+            "Logout",
+            key="mnav_logout_btn",
+            type="secondary",
+            use_container_width=True,
+        ):
+            from src.auth import logout_user
+            logout_user()
