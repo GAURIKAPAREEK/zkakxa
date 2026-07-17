@@ -75,12 +75,14 @@ def render_header(
 
     with actions_c:
         st.markdown('<div class="ui-hdr-actions" aria-hidden="true"></div>', unsafe_allow_html=True)
-        # Required order: Profile | Theme | Logout — profile first, then sun/moon
-        profile_c, theme_c, logout_c = st.columns(
-            [1.45, 0.55, 1.0],
+        # Required order: Theme | Profile | Logout — tight auto widths
+        theme_c, profile_c, logout_c = st.columns(
+            [0.55, 1.45, 1.0],
             gap="small",
             vertical_alignment="center",
         )
+        with theme_c:
+            render_theme_toggle(theme_key)
         with profile_c:
             with st.popover(short_name, key="hdr_profile", use_container_width=False):
                 st.markdown(
@@ -108,8 +110,6 @@ def render_header(
                     from src.auth import logout_user
 
                     logout_user()
-        with theme_c:
-             render_theme_toggle(theme_key)
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
                 from src.auth import logout_user
@@ -123,10 +123,9 @@ def render_header(
             _toggle_mobile_menu()
             st.rerun()
 
-    # Mobile dropdown panel — only rendered when open. Contains the 3 nav links
-    # PLUS a 4th "Change theme" option (sun / moon) so phone users can toggle
-    # the theme from inside the hamburger. Profile + logout stay accessible via
-    # the profile popover in the header row.
+    # Mobile dropdown panel — only rendered when open. Contains ONLY the 3 nav links.
+    # Profile info, theme toggle, and logout stay in the header row (theme + profile visible on
+    # mobile; logout accessible from inside the profile popover).
     if menu_open:
         st.markdown('<div class="ui-mobile-panel" aria-hidden="true"></div>', unsafe_allow_html=True)
         for page_id, label in NAV_PAGES:
@@ -140,20 +139,3 @@ def render_header(
             ):
                 if not is_active:
                     _set_page(page_id)
-       st.divider()
-       st.markdown("### Appearance")
-       render_theme_toggle("mobile_theme_toggle")
-
-        # 4th option — Change theme (destination icon: sun for light, moon for dark)
-        is_dark = st.session_state.get("theme", "dark") == "dark"
-        theme_icon = "☀️" if is_dark else "🌙"
-        if st.button(
-            f"Change theme  {theme_icon}",
-            key="mnav_theme",
-            type="secondary",
-            use_container_width=True,
-            help="Switch to light theme" if is_dark else "Switch to dark theme",
-        ):
-            st.session_state.theme = "light" if is_dark else "dark"
-            st.session_state["mobile_menu_open"] = False
-            st.rerun()
