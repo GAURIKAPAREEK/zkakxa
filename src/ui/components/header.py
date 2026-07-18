@@ -105,6 +105,21 @@ def render_header(
 """,
                     unsafe_allow_html=True,
                 )
+                if st.session_state.get("confirm_delete_desktop"):
+                    st.warning("⚠️ Delete account permanently? This cannot be undone.")
+                    col1, col2, col3, col4 = st.columns([0.5, 2, 2, 0.5])
+                    with col2:
+                        if st.button("Yes, delete", key="confirm_delete_desktop_btn", type="primary"):
+                            from src.auth import delete_user_permanently
+                            delete_user_permanently(username)
+                    with col3:
+                        if st.button("Cancel", key="cancel_delete_desktop_btn"):
+                            st.session_state.confirm_delete_desktop = False
+                            st.rerun()
+                else:
+                    if st.button("Delete account permanently", key="hdr_delete_account_btn", type="secondary"):
+                        st.session_state.confirm_delete_desktop = True
+                        st.rerun()
 
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
@@ -148,7 +163,29 @@ def render_header(
             st.session_state.theme = "light" if is_dark else "dark"
             st.rerun()
 
-        # 5th option: Logout
+        # 5th option: Delete account permanently
+        if st.session_state.get("confirm_delete_mobile"):
+            st.warning("⚠️ Delete account permanently? This cannot be undone.")
+            col1, col2, col3, col4 = st.columns([0.5, 2, 2, 0.5])
+            with col2:
+                if st.button("Yes, delete", key="confirm_delete_mobile_btn", type="primary", use_container_width=True):
+                    from src.auth import delete_user_permanently
+                    delete_user_permanently(username)
+            with col3:
+                if st.button("Cancel", key="cancel_delete_mobile_btn", use_container_width=True):
+                    st.session_state.confirm_delete_mobile = False
+                    st.rerun()
+        else:
+            if st.button(
+                "Delete account permanently",
+                key="mnav_delete_account_btn",
+                type="secondary",
+                use_container_width=True,
+            ):
+                st.session_state.confirm_delete_mobile = True
+                st.rerun()
+
+        # 6th option: Logout
         if st.button(
             "Logout",
             key="mnav_logout_btn",
