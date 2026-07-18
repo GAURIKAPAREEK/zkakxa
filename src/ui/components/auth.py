@@ -41,6 +41,8 @@ def _error(msg: str) -> None:
 
 
 def _login() -> None:
+    if st.session_state.pop("show_password_changed_toast", False):
+        st.toast("Password changed successfully! ✅", icon="✅")
     _head("Welcome back", "Sign in to your workspace to continue.")
     suppress_enter_hint()
     username = st.text_input("Username", key="login_username", placeholder="your_username")
@@ -212,6 +214,7 @@ def _reset() -> None:
         _error(st.session_state["auth_error"])
     if st.session_state.get("reset_success"):
         st.success("Password updated. Sign in with your new password.")
+        st.session_state["show_password_changed_toast"] = True
         st.query_params.clear()
         st.session_state.pop("reset_success", None)
         _goto("login")
