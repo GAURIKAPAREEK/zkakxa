@@ -1346,24 +1346,7 @@ div[class*="st-key-cancel_delete_mobile_btn"] {{
     text-align: center !important;
 }}
 div[class*="st-key-confirm_delete_desktop_btn"] button,
-div[class*="st-key-confirm_delete_mobile_btn"] button {{
-    width: 100% !important;
-    height: 28px !important;
-    min-height: 28px !important;
-    padding: 0 6px !important;
-    font-size: 11px !important;
-    background: var(--ui-surface) !important;
-    color: var(--ui-danger) !important;
-    border: 1px solid var(--ui-danger) !important;
-    border-radius: 6px !important;
-    font-weight: 600 !important;
-}}
-div[class*="st-key-confirm_delete_desktop_btn"] button p,
-div[class*="st-key-confirm_delete_desktop_btn"] button span,
-div[class*="st-key-confirm_delete_mobile_btn"] button p,
-div[class*="st-key-confirm_delete_mobile_btn"] button span {{
-    color: var(--ui-danger) !important;
-}}
+div[class*="st-key-confirm_delete_mobile_btn"] button,
 div[class*="st-key-cancel_delete_desktop_btn"] button,
 div[class*="st-key-cancel_delete_mobile_btn"] button {{
     width: 100% !important;
@@ -1371,17 +1354,22 @@ div[class*="st-key-cancel_delete_mobile_btn"] button {{
     min-height: 28px !important;
     padding: 0 6px !important;
     font-size: 11px !important;
-    background: var(--ui-surface) !important;
-    color: var(--ui-text) !important;
-    border: 1px solid var(--ui-border) !important;
+    background: var(--ui-gradient) !important;
+    color: #ffffff !important;
+    border: none !important;
     border-radius: 6px !important;
     font-weight: 600 !important;
+    box-shadow: var(--ui-shadow-sm) !important;
 }}
+div[class*="st-key-confirm_delete_desktop_btn"] button p,
+div[class*="st-key-confirm_delete_desktop_btn"] button span,
+div[class*="st-key-confirm_delete_mobile_btn"] button p,
+div[class*="st-key-confirm_delete_mobile_btn"] button span,
 div[class*="st-key-cancel_delete_desktop_btn"] button p,
 div[class*="st-key-cancel_delete_desktop_btn"] button span,
 div[class*="st-key-cancel_delete_mobile_btn"] button p,
 div[class*="st-key-cancel_delete_mobile_btn"] button span {{
-    color: var(--ui-text) !important;
+    color: #ffffff !important;
 }}
 [data-testid="stAlert"] {{ margin: {SP[12]}px 0 !important; }}
 [data-testid="stDownloadButton"] {{ margin-top: {SP[8]}px !important; }}
