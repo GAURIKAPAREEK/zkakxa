@@ -57,10 +57,16 @@ def profile_dataframe(df: pd.DataFrame, config: dict) -> dict:
     return profile
 
 
-def calculate_quality_score(profile: dict) -> float:
+def calculate_quality_score(profile: dict, quarantine_rate: float | None = None) -> float:
     """
-    Har column ki severity dekh ke ek overall score (0-100) banata hai.
+    Har column ki severity dekh ke ek column-level score (0-100) banata hai.
     OK = 100, WARNING = 50, CRITICAL = 0 — phir average.
+
+    Agar quarantine_rate diya gaya hai (rows quarantined / total rows), to us
+    row-level signal ko bhi blend kiya jaata hai — sirf per-column null % dekhna
+    kaafi nahi hai, kyunki alag-alag columns ke chhote-chhote null counts bhi
+    row-wise combine ho ke bahut saari rows quarantine karwa sakte hain, jabki
+    har column individually threshold ke neeche rehta hai.
     """
     scores = []
     for col, details in profile["column_profiles"].items():
@@ -71,4 +77,26 @@ def calculate_quality_score(profile: dict) -> float:
         else:
             scores.append(0)
 
-    return round(sum(scores) / len(scores), 2) if scores else 0
+    column_score = round(sum(scores) / len(scores), 2) if scores else 0
+    if quarantine_rate is None:
+        return column_score
+
+    row_score = round((1 - quarantine_rate) * 100, 2)
+    # Row-level quarantine rate is weighted higher (60%) since it reflects
+    # rows that actually failed hard validation rules — a more direct signal
+    # of usable data quality than null-density alone (40%).
+    return round((0.4 * column_score) + (0.6 * row_score), 2)
+
+
+def apply_quarantine_penalty(profile: dict, quarantined_rows: int, total_rows: int) -> dict:
+    """
+    Quarantine result pata chalne ke baad profile['overall_quality_score'] ko
+    update karta hai taaki score sirf column nulls hi nahi, actual quarantine
+    rate bhi reflect kare. Original column-only score 'column_quality_score'
+    ke naam se preserve rehta hai for reference.
+    """
+    quarantine_rate = (quarantined_rows / total_rows) if total_rows else 0
+    profile["column_quality_score"] = profile.get("overall_quality_score", 0)
+    profile["quarantine_rate"] = round(quarantine_rate * 100, 2)
+    profile["overall_quality_score"] = calculate_quality_score(profile, quarantine_rate=quarantine_rate)
+    return profile
