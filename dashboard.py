@@ -15,7 +15,7 @@ from src.cleaning import count_null_cells, save_clean_data, verify_clean_data
 from src.ui.chart import render_quality_trend_charts
 from src.ingestion import load_config, load_file
 from src.paths import resolve_path
-from src.profiler import profile_dataframe
+from src.profiler import apply_quarantine_penalty, profile_dataframe
 from src.quality_trend import get_quality_trend
 from src.quarantine import quarantine_bad_rows, save_quarantine
 from src.schema_drift import detect_schema_drift, save_schema_snapshot
@@ -100,6 +100,7 @@ def _run_pipeline(uploaded_file):
             profile = profile_dataframe(df, config)
             violations, summary = apply_validation_rules(df, config)
             clean_df, quarantined_df = quarantine_bad_rows(df, violations, config)
+            apply_quarantine_penalty(profile, len(quarantined_df), len(df))
             clean_report = verify_clean_data(clean_df, config)
             save_quarantine(quarantined_df, config, uploaded_file.name)
             save_clean_data(clean_df, config, uploaded_file.name)
