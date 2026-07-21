@@ -1,0 +1,4 @@
+product_id,initial_price,rating,title,email
+1.0,10.0,4.5,Product A,a@example.com
+3.0,15.0,6.0,Product C,c@example.com
+5.0,12.0,2.5,Product E,e@example.com

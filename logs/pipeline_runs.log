@@ -1,0 +1,981 @@
+2026-06-30 17:58:32,044 | INFO | File loaded: tshirts.csv | Rows: 39 | Cols: 24
+2026-06-30 18:03:15,629 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-06-30 18:04:53,443 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-06-30 18:10:01,404 | INFO | Validation complete: 2 violations found (2 critical, 0 warning)
+2026-06-30 18:10:01,418 | INFO | Quarantine complete: 1 rows quarantined, 39 rows remain clean
+2026-06-30 18:13:21,880 | ERROR | No such comm target registered: jupyter.widget.control
+2026-06-30 18:13:21,919 | WARNING | No such comm: 0be316eb-77b3-4da6-b5b4-e47d5e9fd203
+2026-06-30 18:21:18,371 | ERROR | No such comm target registered: jupyter.widget.control
+2026-06-30 18:21:18,388 | WARNING | No such comm: 80fc9ca0-7dea-4ddb-a4fb-c1c7ef3dafa2
+2026-06-30 19:11:13,411 | ERROR | No such comm target registered: jupyter.widget.control
+2026-06-30 19:11:13,416 | WARNING | No such comm: 9c3c091c-5c2e-4b5b-bed5-53ee94037253
+2026-06-30 19:15:49,632 | INFO | Anomaly detection complete: 7 anomalies found
+2026-06-30 19:16:05,963 | WARNING | SCHEMA DRIFT DETECTED for tshirts.csv: {'drift_detected': True, 'is_first_run': False, 'added_columns': ['new_promo_column'], 'removed_columns': ['currency'], 'type_changes': [], 'checked_at': '2026-06-30 19:16:05.963101'}
+2026-06-30 19:23:20,658 | ERROR | No such comm target registered: jupyter.widget.control
+2026-06-30 19:23:20,667 | WARNING | No such comm: 223ebc10-3ef7-44ab-9dc3-660d2dd43c6d
+2026-07-03 16:54:52,405 | INFO | File loaded: tshirts.csv | Rows: 39 | Cols: 24
+2026-07-03 16:54:56,872 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 16:55:26,070 | INFO | File loaded: tshirts.csv | Rows: 39 | Cols: 24
+2026-07-03 16:55:26,142 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 16:57:29,983 | INFO | Validation complete: 2 violations found (2 critical, 0 warning)
+2026-07-03 16:57:29,994 | INFO | Quarantine complete: 1 rows quarantined, 39 rows remain clean
+2026-07-03 16:57:31,227 | INFO | Anomaly detection complete: 7 anomalies found
+2026-07-03 16:57:31,250 | INFO | No schema drift detected for tshirts.csv
+2026-07-03 16:57:32,084 | WARNING | SCHEMA DRIFT DETECTED for tshirts.csv: {'drift_detected': True, 'is_first_run': False, 'added_columns': ['new_promo_column'], 'removed_columns': ['currency'], 'type_changes': [], 'checked_at': '2026-07-03 16:57:32.084761'}
+2026-07-03 16:59:32,426 | INFO | File loaded: tshirts.csv | Rows: 39 | Cols: 24
+2026-07-03 16:59:33,190 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 17:00:00,191 | INFO | Validation complete: 2 violations found (2 critical, 0 warning)
+2026-07-03 17:00:00,200 | INFO | Quarantine complete: 1 rows quarantined, 39 rows remain clean
+2026-07-03 17:00:00,826 | INFO | Anomaly detection complete: 7 anomalies found
+2026-07-03 17:00:00,830 | INFO | No schema drift detected for tshirts.csv
+2026-07-03 17:00:01,296 | WARNING | SCHEMA DRIFT DETECTED for tshirts.csv: {'drift_detected': True, 'is_first_run': False, 'added_columns': ['new_promo_column'], 'removed_columns': ['currency'], 'type_changes': [], 'checked_at': '2026-07-03 17:00:01.296101'}
+2026-07-03 17:01:32,241 | INFO | Pipeline runs table ready
+2026-07-03 17:01:32,267 | INFO | Pipeline run saved: tshirts.csv
+2026-07-03 17:01:32,280 | INFO | Quality trend fetched: 1 runs
+2026-07-03 17:36:14,563 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:37:55,781 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:38:20,444 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:41:24,451 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:41:35,200 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:45:55,881 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:46:10,414 | ERROR | Trend fetch error: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 17:54:16,269 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 17:54:16,272 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 17:54:16,292 | INFO | Pipeline runs table ready
+2026-07-03 17:54:16,305 | INFO | Pipeline run saved: data-1779269866954.csv
+2026-07-03 18:00:03,895 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 18:00:03,896 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 18:00:03,936 | INFO | No schema drift detected for data-1779269866954.csv
+2026-07-03 18:00:03,941 | INFO | Pipeline runs table ready
+2026-07-03 18:00:03,950 | INFO | Pipeline run saved: data-1779269866954.csv
+2026-07-03 20:47:39,770 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 22:20:28,020 | INFO | Pipeline runs table ready
+2026-07-03 22:20:28,070 | INFO | Pipeline run saved: Sample - Superstore.csv
+2026-07-03 22:39:27,480 | INFO | File loaded: Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-03 22:43:39,414 | INFO | File loaded: updated.csv | Rows: 21 | Cols: 1
+2026-07-03 22:43:39,562 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:43:39,570 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 22:43:39,720 | INFO | Pipeline runs table ready
+2026-07-03 22:43:39,862 | INFO | Pipeline run saved: updated.csv
+2026-07-03 22:43:47,460 | INFO | File loaded: updated.csv | Rows: 21 | Cols: 1
+2026-07-03 22:43:47,465 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:43:47,466 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 22:43:47,497 | INFO | No schema drift detected for updated.csv
+2026-07-03 22:43:47,506 | INFO | Pipeline runs table ready
+2026-07-03 22:43:47,532 | INFO | Pipeline run saved: updated.csv
+2026-07-03 22:44:59,084 | INFO | File loaded: Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-03 22:44:59,184 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:44:59,240 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-03 22:44:59,256 | INFO | Pipeline runs table ready
+2026-07-03 22:44:59,289 | INFO | Pipeline run saved: Sample - Superstore.csv
+2026-07-03 22:45:11,486 | INFO | File loaded: Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-03 22:45:11,578 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:45:11,629 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-03 22:45:11,657 | INFO | No schema drift detected for Sample - Superstore.csv
+2026-07-03 22:45:11,665 | INFO | Pipeline runs table ready
+2026-07-03 22:45:11,693 | INFO | Pipeline run saved: Sample - Superstore.csv
+2026-07-03 22:45:29,621 | INFO | File loaded: clean_Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-03 22:45:29,689 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:45:29,734 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-03 22:45:29,745 | INFO | Pipeline runs table ready
+2026-07-03 22:45:29,768 | INFO | Pipeline run saved: clean_Sample - Superstore.csv
+2026-07-03 22:45:54,502 | INFO | File loaded: clean_Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-03 22:45:54,589 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:45:54,636 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-03 22:45:54,664 | INFO | No schema drift detected for clean_Sample - Superstore.csv
+2026-07-03 22:45:54,673 | INFO | Pipeline runs table ready
+2026-07-03 22:45:54,699 | INFO | Pipeline run saved: clean_Sample - Superstore.csv
+2026-07-03 22:46:23,298 | INFO | File loaded: Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-03 22:46:23,416 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:46:23,483 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-03 22:46:23,514 | INFO | No schema drift detected for Sample - Superstore.csv
+2026-07-03 22:46:23,528 | INFO | Pipeline runs table ready
+2026-07-03 22:46:23,571 | INFO | Pipeline run saved: Sample - Superstore.csv
+2026-07-03 22:52:04,950 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 22:52:04,995 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:52:05,000 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 22:52:05,013 | INFO | Pipeline runs table ready
+2026-07-03 22:52:05,041 | INFO | Pipeline run saved: data.csv
+2026-07-03 22:52:10,063 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 22:52:10,080 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:52:10,085 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 22:52:10,121 | INFO | No schema drift detected for data.csv
+2026-07-03 22:52:10,127 | INFO | Pipeline runs table ready
+2026-07-03 22:52:10,146 | INFO | Pipeline run saved: data.csv
+2026-07-03 22:52:41,640 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 22:52:41,671 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:52:41,675 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 22:52:41,699 | INFO | No schema drift detected for data.csv
+2026-07-03 22:52:41,707 | INFO | Pipeline runs table ready
+2026-07-03 22:52:41,728 | INFO | Pipeline run saved: data.csv
+2026-07-03 22:53:25,274 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 22:53:25,302 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:53:25,305 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 22:53:25,332 | INFO | No schema drift detected for data.csv
+2026-07-03 22:53:25,343 | INFO | Pipeline runs table ready
+2026-07-03 22:53:25,365 | INFO | Pipeline run saved: data.csv
+2026-07-03 22:57:55,956 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 22:59:40,146 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 22:59:40,168 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:00:20,271 | INFO | Validation complete: 112 violations found (112 critical, 0 warning)
+2026-07-03 23:00:20,288 | INFO | Quarantine complete: 39 rows quarantined, 0 rows remain clean
+2026-07-03 23:02:09,067 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 23:02:09,205 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:02:09,485 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-03 23:03:21,007 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 23:03:21,161 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:08:37,521 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 23:08:37,597 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 23:08:37,606 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:08:37,625 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-03 23:08:37,633 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 23:08:37,647 | INFO | No schema drift detected for data.csv
+2026-07-03 23:08:37,660 | INFO | Pipeline runs table ready
+2026-07-03 23:08:37,682 | INFO | Pipeline run saved: data.csv
+2026-07-03 23:08:51,826 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 23:08:51,888 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 23:08:51,894 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:08:51,913 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-03 23:08:51,924 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 23:08:51,950 | INFO | No schema drift detected for data.csv
+2026-07-03 23:08:51,955 | INFO | Pipeline runs table ready
+2026-07-03 23:08:51,967 | INFO | Pipeline run saved: data.csv
+2026-07-03 23:10:30,779 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 23:10:30,823 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 23:10:30,829 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:10:30,861 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-03 23:10:30,869 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 23:10:30,894 | INFO | No schema drift detected for data.csv
+2026-07-03 23:10:30,921 | INFO | Pipeline runs table ready
+2026-07-03 23:10:30,946 | INFO | Pipeline run saved: data.csv
+2026-07-03 23:12:41,831 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-03 23:12:41,871 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-03 23:12:41,880 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-03 23:12:41,903 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-03 23:12:41,915 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-03 23:12:41,944 | INFO | No schema drift detected for data.csv
+2026-07-03 23:12:41,950 | INFO | Pipeline runs table ready
+2026-07-03 23:12:41,974 | INFO | Pipeline run saved: data.csv
+2026-07-03 23:25:31,120 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 12:24:04,590 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 12:24:04,604 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 12:24:04,605 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 14:18:57,658 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 14:18:57,925 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 18:53:47,444 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 18:53:47,454 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 18:53:47,458 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-04 22:08:48,325 | INFO | Added username column to pipeline_runs
+2026-07-04 22:08:48,326 | INFO | Pipeline runs table ready
+2026-07-07 21:42:27,651 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-07 21:42:27,733 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-07 21:42:27,741 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-07 21:42:27,759 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-07 21:42:27,763 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-07 21:42:27,768 | INFO | Pipeline runs table ready
+2026-07-07 21:42:27,781 | INFO | Pipeline run saved: data.csv
+2026-07-07 21:57:46,305 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-10 23:11:53,920 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-10 23:16:39,477 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-10 23:35:40,732 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-10 23:35:40,828 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-10 23:35:40,840 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-10 23:35:40,889 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\OneDrive\Desktop\DataSentinel-main\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-10 23:35:40,894 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-10 23:35:40,942 | INFO | Pipeline runs table ready
+2026-07-10 23:35:40,962 | INFO | Pipeline run saved: data.csv
+2026-07-10 23:40:26,786 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-10 23:40:26,833 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-10 23:40:26,839 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-10 23:40:26,852 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\OneDrive\Desktop\DataSentinel-main\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-10 23:40:26,857 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-10 23:40:26,859 | INFO | No schema drift detected for data.csv
+2026-07-10 23:40:26,883 | INFO | Pipeline runs table ready
+2026-07-10 23:40:26,892 | INFO | Pipeline run saved: data.csv
+2026-07-11 04:09:52,237 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-11 04:09:52,241 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-11 04:09:52,242 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-11 04:09:52,243 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-11 18:03:39,560 | INFO | Pipeline runs table ready
+2026-07-11 18:04:13,901 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-11 18:05:05,405 | INFO | Pipeline runs table ready
+2026-07-11 18:05:31,798 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-11 21:39:45,646 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 16:23:54,344 | INFO | Pipeline runs table ready
+2026-07-12 16:24:38,088 | INFO | Pipeline runs table ready
+2026-07-12 16:25:14,177 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 16:25:46,266 | INFO | Pipeline runs table ready
+2026-07-12 16:26:15,905 | INFO | Pipeline runs table ready
+2026-07-12 16:26:50,485 | INFO | Pipeline runs table ready
+2026-07-12 16:28:24,154 | INFO | Pipeline runs table ready
+2026-07-12 16:30:02,583 | INFO | Pipeline runs table ready
+2026-07-12 16:31:13,079 | INFO | Pipeline runs table ready
+2026-07-12 16:31:32,458 | INFO | Pipeline runs table ready
+2026-07-12 16:31:32,741 | INFO | Pipeline runs table ready
+2026-07-12 16:31:32,827 | INFO | File loaded: sample_data.csv | Rows: 5 | Cols: 5
+2026-07-12 16:31:32,933 | INFO | Validation complete: 4 violations found (3 critical, 1 warning)
+2026-07-12 16:31:32,948 | INFO | Quarantine complete: 2 rows quarantined, 3 rows remain clean
+2026-07-12 16:31:50,864 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 16:32:23,208 | INFO | Pipeline runs table ready
+2026-07-12 16:32:41,593 | INFO | Pipeline runs table ready
+2026-07-12 16:32:41,827 | INFO | Pipeline runs table ready
+2026-07-12 16:32:41,868 | INFO | File loaded: sample_data.csv | Rows: 5 | Cols: 5
+2026-07-12 16:32:41,899 | INFO | Validation complete: 4 violations found (3 critical, 1 warning)
+2026-07-12 16:32:41,906 | INFO | Quarantine complete: 2 rows quarantined, 3 rows remain clean
+2026-07-12 16:33:37,238 | INFO | Pipeline runs table ready
+2026-07-12 16:34:09,324 | INFO | Pipeline runs table ready
+2026-07-12 16:34:09,700 | INFO | Pipeline runs table ready
+2026-07-12 16:34:09,785 | INFO | File loaded: sample_data.csv | Rows: 5 | Cols: 5
+2026-07-12 16:34:09,829 | INFO | Validation complete: 4 violations found (3 critical, 1 warning)
+2026-07-12 16:34:09,838 | INFO | Quarantine complete: 2 rows quarantined, 3 rows remain clean
+2026-07-12 16:36:26,455 | INFO | Pipeline runs table ready
+2026-07-12 16:36:41,051 | INFO | Pipeline runs table ready
+2026-07-12 16:36:41,321 | INFO | Pipeline runs table ready
+2026-07-12 16:36:41,371 | INFO | File loaded: sample_data.csv | Rows: 5 | Cols: 5
+2026-07-12 16:36:41,403 | INFO | Validation complete: 4 violations found (3 critical, 1 warning)
+2026-07-12 16:36:41,407 | INFO | Quarantine complete: 2 rows quarantined, 3 rows remain clean
+2026-07-12 16:38:00,015 | INFO | Pipeline runs table ready
+2026-07-12 16:38:25,003 | INFO | Pipeline runs table ready
+2026-07-12 16:38:25,308 | INFO | Pipeline runs table ready
+2026-07-12 16:38:25,351 | INFO | File loaded: sample_data.csv | Rows: 5 | Cols: 5
+2026-07-12 16:38:25,381 | INFO | Validation complete: 4 violations found (3 critical, 1 warning)
+2026-07-12 16:38:25,391 | INFO | Quarantine complete: 2 rows quarantined, 3 rows remain clean
+2026-07-12 16:38:25,458 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\OneDrive\Desktop\DataSentinel-main\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_sample_data.csv
+2026-07-12 16:38:25,464 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-12 16:38:25,471 | INFO | Pipeline runs table ready
+2026-07-12 16:38:25,518 | INFO | Pipeline run saved: sample_data.csv
+2026-07-12 16:38:49,541 | INFO | Pipeline runs table ready
+2026-07-12 16:38:49,885 | INFO | Pipeline runs table ready
+2026-07-12 16:38:49,979 | INFO | File loaded: sample_data.csv | Rows: 5 | Cols: 5
+2026-07-12 16:38:50,014 | INFO | Validation complete: 4 violations found (3 critical, 1 warning)
+2026-07-12 16:38:50,019 | INFO | Quarantine complete: 2 rows quarantined, 3 rows remain clean
+2026-07-12 16:38:50,040 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\OneDrive\Desktop\DataSentinel-main\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_sample_data.csv
+2026-07-12 16:38:50,047 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-12 16:38:50,053 | INFO | No schema drift detected for sample_data.csv
+2026-07-12 16:38:50,063 | INFO | Pipeline runs table ready
+2026-07-12 16:38:50,082 | INFO | Pipeline run saved: sample_data.csv
+2026-07-12 17:01:39,291 | INFO | Pipeline runs table ready
+2026-07-12 17:03:54,254 | INFO | Pipeline runs table ready
+2026-07-12 17:03:54,331 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-12 17:03:54,463 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-12 17:03:54,477 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-12 17:03:54,520 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\OneDrive\Desktop\DataSentinel-main\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-12 17:03:54,536 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-12 17:03:54,547 | INFO | Pipeline runs table ready
+2026-07-12 17:03:54,573 | INFO | Pipeline run saved: data.csv
+2026-07-12 17:04:14,691 | INFO | Pipeline runs table ready
+2026-07-12 17:04:14,731 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-12 17:04:14,754 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-12 17:04:14,763 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-12 17:04:14,780 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\OneDrive\Desktop\DataSentinel-main\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-12 17:04:14,780 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-12 17:04:14,780 | INFO | No schema drift detected for data.csv
+2026-07-12 17:04:14,797 | INFO | Pipeline runs table ready
+2026-07-12 17:04:14,811 | INFO | Pipeline run saved: data.csv
+2026-07-12 17:04:14,900 | INFO | Pipeline runs table ready
+2026-07-12 18:29:10,873 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 18:29:43,131 | INFO | Pipeline runs table ready
+2026-07-12 18:30:37,310 | INFO | Pipeline runs table ready
+2026-07-12 18:47:14,005 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 18:47:14,033 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 18:47:14,034 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 18:47:14,036 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 23:44:15,215 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-13 17:46:58,831 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-13 17:55:32,722 | INFO | Pipeline runs table ready
+2026-07-13 17:59:15,922 | INFO | Pipeline runs table ready
+2026-07-13 18:01:50,025 | INFO | Pipeline runs table ready
+2026-07-13 18:04:11,995 | INFO | Pipeline runs table ready
+2026-07-13 18:05:19,405 | INFO | Pipeline runs table ready
+2026-07-13 18:06:53,952 | INFO | Pipeline runs table ready
+2026-07-13 18:10:04,577 | INFO | Pipeline runs table ready
+2026-07-13 18:15:42,400 | INFO | Pipeline runs table ready
+2026-07-13 18:16:22,246 | INFO | Pipeline runs table ready
+2026-07-13 18:17:07,770 | INFO | Pipeline runs table ready
+2026-07-13 18:17:29,875 | INFO | Pipeline runs table ready
+2026-07-13 18:18:34,684 | INFO | Pipeline runs table ready
+2026-07-13 18:20:10,222 | INFO | Pipeline runs table ready
+2026-07-13 18:21:05,887 | INFO | Pipeline runs table ready
+2026-07-13 18:23:21,519 | INFO | Pipeline runs table ready
+2026-07-13 18:23:40,376 | INFO | Pipeline runs table ready
+2026-07-13 18:28:30,600 | INFO | Pipeline runs table ready
+2026-07-13 18:29:18,453 | INFO | Pipeline runs table ready
+2026-07-13 18:30:38,454 | INFO | Pipeline runs table ready
+2026-07-13 18:34:33,448 | INFO | Pipeline runs table ready
+2026-07-13 18:57:59,114 | INFO | Pipeline runs table ready
+2026-07-13 18:59:00,652 | INFO | Pipeline runs table ready
+2026-07-13 19:01:57,973 | INFO | Pipeline runs table ready
+2026-07-13 19:03:14,631 | INFO | Pipeline runs table ready
+2026-07-13 19:03:31,686 | INFO | Pipeline runs table ready
+2026-07-13 19:03:36,367 | INFO | Pipeline runs table ready
+2026-07-13 19:10:59,149 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-14 22:18:30,053 | INFO | Pipeline runs table ready
+2026-07-14 22:32:06,124 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-14 22:36:58,149 | INFO | Pipeline runs table ready
+2026-07-14 22:37:41,450 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-14 22:37:41,530 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-14 22:37:41,543 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-14 22:37:41,577 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-14 22:37:41,589 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-14 22:37:41,592 | INFO | No schema drift detected for data.csv
+2026-07-14 22:37:41,599 | INFO | Pipeline runs table ready
+2026-07-14 22:37:41,629 | INFO | Pipeline run saved: data.csv
+2026-07-14 22:37:48,831 | INFO | Pipeline runs table ready
+2026-07-14 22:37:48,901 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-14 22:37:48,951 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-14 22:37:48,958 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-14 22:37:48,982 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-14 22:37:48,990 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-14 22:37:49,009 | INFO | No schema drift detected for data.csv
+2026-07-14 22:37:49,016 | INFO | Pipeline runs table ready
+2026-07-14 22:37:49,036 | INFO | Pipeline run saved: data.csv
+2026-07-14 22:48:46,928 | INFO | Pipeline runs table ready
+2026-07-14 22:49:09,884 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-14 22:49:10,000 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-14 22:49:10,013 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-14 22:49:10,060 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-14 22:49:10,070 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-14 22:49:10,074 | INFO | No schema drift detected for data.csv
+2026-07-14 22:49:10,081 | INFO | Pipeline runs table ready
+2026-07-14 22:49:10,112 | INFO | Pipeline run saved: data.csv
+2026-07-14 22:49:10,217 | INFO | Pipeline runs table ready
+2026-07-15 09:50:52,236 | INFO | Pipeline runs table ready
+2026-07-15 10:02:27,554 | INFO | Pipeline runs table ready
+2026-07-15 10:02:57,332 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-15 10:02:57,402 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-15 10:02:57,410 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-15 10:02:57,436 | INFO | Quarantine file saved: C:\Users\DHRUV SAXENA\GP\DataSentinel-main\DataSentinel\DataSentinel\data\quarantine\quarantine_data.csv
+2026-07-15 10:02:57,443 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-15 10:02:57,446 | INFO | No schema drift detected for data.csv
+2026-07-15 10:02:57,451 | INFO | Pipeline runs table ready
+2026-07-15 10:02:57,471 | INFO | Pipeline run saved: data.csv
+2026-07-15 10:03:03,175 | INFO | Pipeline runs table ready
+2026-07-15 10:03:06,831 | INFO | File loaded: Sample - Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-15 10:03:06,866 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-15 10:03:07,171 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-15 10:03:07,181 | INFO | Pipeline runs table ready
+2026-07-15 10:03:07,205 | INFO | Pipeline run saved: Sample - Superstore.csv
+2026-07-15 10:05:14,151 | INFO | Pipeline runs table ready
+2026-07-15 10:05:14,189 | INFO | Pipeline runs table ready
+2026-07-15 10:08:33,025 | INFO | Pipeline runs table ready
+2026-07-15 10:16:02,713 | INFO | Pipeline runs table ready
+2026-07-15 10:21:17,789 | INFO | Pipeline runs table ready
+2026-07-15 10:39:44,307 | INFO | Pipeline runs table ready
+2026-07-15 10:44:43,254 | INFO | Pipeline runs table ready
+2026-07-15 10:48:52,020 | INFO | Pipeline runs table ready
+2026-07-15 10:52:25,577 | INFO | Pipeline runs table ready
+2026-07-15 10:59:22,172 | INFO | Pipeline runs table ready
+2026-07-15 11:08:09,318 | INFO | Pipeline runs table ready
+2026-07-15 11:26:40,368 | INFO | Pipeline runs table ready
+2026-07-15 11:29:50,271 | INFO | Pipeline runs table ready
+2026-07-15 11:32:59,407 | INFO | Pipeline runs table ready
+2026-07-15 11:34:43,397 | INFO | Pipeline runs table ready
+2026-07-15 11:38:59,319 | INFO | Pipeline runs table ready
+2026-07-15 11:40:03,156 | INFO | Pipeline runs table ready
+2026-07-15 11:43:37,771 | INFO | Pipeline runs table ready
+2026-07-15 11:54:57,077 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 11:55:13,605 | INFO | Pipeline runs table ready
+2026-07-15 19:34:34,487 | INFO | Pipeline runs table ready
+2026-07-15 19:37:14,691 | INFO | Pipeline runs table ready
+2026-07-15 19:38:03,416 | INFO | Pipeline runs table ready
+2026-07-15 19:39:29,733 | INFO | Pipeline runs table ready
+2026-07-15 19:41:40,917 | INFO | Pipeline runs table ready
+2026-07-15 19:43:21,483 | INFO | Pipeline runs table ready
+2026-07-15 19:44:40,791 | INFO | Pipeline runs table ready
+2026-07-15 20:35:32,186 | INFO | Pipeline runs table ready
+2026-07-15 20:37:29,349 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 20:38:52,294 | INFO | Pipeline runs table ready
+2026-07-15 20:38:58,069 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 20:39:59,256 | INFO | Pipeline runs table ready
+2026-07-15 20:42:15,906 | INFO | Pipeline runs table ready
+2026-07-15 21:03:33,647 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 21:04:53,450 | INFO | Pipeline runs table ready
+2026-07-15 21:06:09,857 | INFO | Pipeline runs table ready
+2026-07-15 21:07:32,144 | INFO | Pipeline runs table ready
+2026-07-15 21:09:48,775 | INFO | Pipeline runs table ready
+2026-07-15 21:12:06,135 | INFO | Pipeline runs table ready
+2026-07-15 21:21:07,616 | INFO | Pipeline runs table ready
+2026-07-15 21:21:30,783 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 21:38:43,313 | INFO | Pipeline runs table ready
+2026-07-15 21:41:23,280 | INFO | Pipeline runs table ready
+2026-07-15 21:41:47,639 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 21:43:39,063 | INFO | Pipeline runs table ready
+2026-07-15 21:45:28,944 | INFO | Pipeline runs table ready
+2026-07-15 21:48:26,992 | INFO | Pipeline runs table ready
+2026-07-15 21:49:47,704 | INFO | Pipeline runs table ready
+2026-07-15 21:52:25,603 | INFO | Pipeline runs table ready
+2026-07-15 21:53:37,237 | INFO | Pipeline runs table ready
+2026-07-15 21:56:28,791 | INFO | Pipeline runs table ready
+2026-07-15 21:59:30,443 | INFO | Pipeline runs table ready
+2026-07-15 22:00:16,532 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 22:03:00,694 | INFO | Pipeline runs table ready
+2026-07-15 22:03:08,597 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 22:03:47,405 | INFO | Pipeline runs table ready
+2026-07-15 22:04:11,550 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 22:06:21,861 | INFO | Pipeline runs table ready
+2026-07-15 22:07:11,002 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 22:07:11,397 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-15 22:07:18,276 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 19:33:57,710 | INFO | Pipeline runs table ready
+2026-07-18 20:05:40,986 | INFO | Pipeline runs table ready
+2026-07-18 20:07:52,712 | INFO | Pipeline runs table ready
+2026-07-18 20:08:39,547 | INFO | Pipeline runs table ready
+2026-07-18 20:10:57,957 | INFO | Pipeline runs table ready
+2026-07-18 20:11:51,478 | INFO | Pipeline runs table ready
+2026-07-18 22:06:12,787 | INFO | Pipeline runs table ready
+2026-07-18 22:08:51,712 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 22:09:14,038 | INFO | Pipeline runs table ready
+2026-07-18 22:21:57,703 | INFO | Pipeline runs table ready
+2026-07-18 22:24:43,992 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 22:25:09,963 | INFO | Pipeline runs table ready
+2026-07-18 22:38:36,399 | INFO | Pipeline runs table ready
+2026-07-18 22:39:17,394 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-18 22:39:17,575 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-18 22:39:17,594 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-18 22:39:17,694 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-18 22:39:17,707 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-18 22:39:17,715 | INFO | Pipeline runs table ready
+2026-07-18 22:39:17,756 | INFO | Pipeline run saved: data.csv
+2026-07-18 22:39:39,104 | INFO | Pipeline runs table ready
+2026-07-18 22:41:28,653 | INFO | Pipeline runs table ready
+2026-07-18 22:42:07,583 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-18 22:42:07,642 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-18 22:42:07,658 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-18 22:42:07,694 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-18 22:42:07,707 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-18 22:42:07,712 | INFO | No schema drift detected for data.csv
+2026-07-18 22:42:07,719 | INFO | Pipeline runs table ready
+2026-07-18 22:42:07,752 | INFO | Pipeline run saved: data.csv
+2026-07-18 23:12:50,327 | INFO | Pipeline runs table ready
+2026-07-18 23:12:50,513 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-18 23:12:50,573 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-18 23:12:50,587 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-18 23:12:50,628 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-18 23:12:50,637 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-18 23:12:50,639 | INFO | No schema drift detected for data.csv
+2026-07-18 23:12:50,645 | INFO | Pipeline runs table ready
+2026-07-18 23:12:50,663 | INFO | Pipeline run saved: data.csv
+2026-07-19 17:16:27,495 | INFO | Pipeline runs table ready
+2026-07-19 17:17:34,464 | INFO | Pipeline runs table ready
+2026-07-19 17:18:54,187 | INFO | Pipeline runs table ready
+2026-07-20 20:52:32,571 | INFO | Pipeline runs table ready
+2026-07-20 20:53:21,753 | INFO | Pipeline runs table ready
+2026-07-20 20:56:49,091 | INFO | Pipeline runs table ready
+2026-07-20 20:57:19,137 | INFO | File loaded: Sample_Superstore.csv | Rows: 9994 | Cols: 21
+2026-07-20 20:57:19,515 | INFO | Validation complete: 0 violations found (0 critical, 0 warning)
+2026-07-20 20:57:20,284 | INFO | Anomaly detection complete: 647 anomalies found
+2026-07-20 20:57:20,313 | INFO | Pipeline runs table ready
+2026-07-20 20:57:20,393 | INFO | Pipeline run saved: Sample_Superstore.csv
+2026-07-20 20:58:31,482 | INFO | Pipeline runs table ready
+2026-07-20 21:00:07,959 | INFO | Pipeline runs table ready
+2026-07-20 21:07:12,923 | INFO | Pipeline runs table ready
+2026-07-20 21:25:40,387 | INFO | Pipeline runs table ready
+2026-07-20 22:07:10,221 | INFO | Pipeline runs table ready
+2026-07-20 22:07:11,083 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-20 22:07:11,321 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-20 22:07:11,370 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-20 22:07:11,498 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-20 22:07:11,530 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-20 22:07:11,582 | INFO | No schema drift detected for data.csv
+2026-07-20 22:07:11,604 | INFO | Pipeline runs table ready
+2026-07-20 22:07:11,670 | INFO | Pipeline run saved: data.csv
+2026-07-20 22:07:40,963 | INFO | Pipeline runs table ready
+2026-07-20 22:28:33,182 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-20 22:28:33,232 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-20 22:28:33,239 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-20 22:28:33,239 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-20 22:32:34,375 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-20 22:32:34,608 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-20 22:32:34,635 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-20 22:32:34,651 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-20 22:32:34,684 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-20 22:32:34,810 | INFO | Pipeline runs table ready
+2026-07-20 22:33:20,614 | INFO | Pipeline runs table ready
+2026-07-20 22:33:32,995 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-20 22:33:33,245 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-20 22:33:33,291 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-20 22:33:33,407 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-20 22:33:33,442 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-20 22:33:33,452 | INFO | No schema drift detected for data.csv
+2026-07-20 22:33:33,480 | INFO | Pipeline runs table ready
+2026-07-20 22:33:33,545 | INFO | Pipeline run saved: data.csv
+2026-07-20 22:33:44,074 | INFO | Pipeline runs table ready
+2026-07-20 22:39:21,398 | INFO | Pipeline runs table ready
+2026-07-20 22:40:15,653 | INFO | Pipeline runs table ready
+2026-07-20 22:40:15,751 | INFO | File loaded: data.csv | Rows: 200 | Cols: 14
+2026-07-20 22:40:15,861 | INFO | Validation complete: 97 violations found (97 critical, 0 warning)
+2026-07-20 22:40:15,873 | INFO | Quarantine complete: 80 rows quarantined, 120 rows remain clean
+2026-07-20 22:40:15,939 | INFO | Quarantine file saved: C:\Users\Manoj Pareek\Downloads\DataSentinel-main\DataSentinel-main\data\quarantine\quarantine_data.csv
+2026-07-20 22:40:15,954 | INFO | Anomaly detection complete: 0 anomalies found
+2026-07-20 22:40:15,984 | INFO | No schema drift detected for data.csv
+2026-07-20 22:40:15,993 | INFO | Pipeline runs table ready
+2026-07-20 22:40:16,027 | INFO | Pipeline run saved: data.csv
+2026-07-20 22:40:23,462 | INFO | Pipeline runs table ready
+2026-07-20 22:42:22,377 | INFO | Pipeline runs table ready
+2026-07-20 22:43:07,833 | INFO | Pipeline runs table ready
+2026-07-20 22:52:08,264 | INFO | Pipeline runs table ready
+2026-07-20 22:52:58,884 | INFO | Pipeline runs table ready
+2026-07-20 22:53:49,328 | INFO | Pipeline runs table ready
+2026-07-20 22:58:40,922 | INFO | Pipeline runs table ready
+2026-07-20 23:01:54,005 | INFO | Pipeline runs table ready
+2026-07-20 23:05:10,392 | INFO | Pipeline runs table ready
+2026-07-20 23:08:01,986 | INFO | Pipeline runs table ready
+2026-07-20 23:10:20,474 | INFO | Pipeline runs table ready
+2026-07-20 23:12:12,966 | INFO | Pipeline runs table ready
+2026-07-20 23:16:05,275 | INFO | Pipeline runs table ready
+2026-07-20 23:18:24,418 | INFO | Pipeline runs table ready
+2026-07-20 23:19:37,583 | INFO | Pipeline runs table ready
+2026-07-20 23:20:59,505 | INFO | Pipeline runs table ready
+2026-07-20 23:22:51,207 | INFO | Pipeline runs table ready
+2026-07-20 23:23:39,011 | INFO | Pipeline runs table ready
+2026-07-20 23:25:19,827 | INFO | Pipeline runs table ready
+2026-07-20 23:26:36,887 | INFO | Pipeline runs table ready
+2026-07-20 23:27:52,398 | INFO | Pipeline runs table ready
+2026-07-20 23:29:31,982 | INFO | Pipeline runs table ready
+2026-07-20 23:30:38,617 | INFO | Pipeline runs table ready
+2026-07-20 23:35:17,982 | INFO | Pipeline runs table ready
+2026-07-20 23:36:39,028 | INFO | Pipeline runs table ready
+2026-07-20 23:37:55,938 | INFO | Pipeline runs table ready
+2026-07-20 23:39:14,381 | INFO | Pipeline runs table ready
+2026-07-20 23:40:43,544 | INFO | Pipeline runs table ready
+2026-07-20 23:41:52,876 | INFO | Pipeline runs table ready
+2026-07-20 23:42:45,456 | INFO | Pipeline runs table ready
+2026-07-20 23:43:38,421 | INFO | Pipeline runs table ready
+2026-07-20 23:44:48,322 | INFO | Pipeline runs table ready
+2026-07-20 23:45:40,949 | INFO | Pipeline runs table ready
+2026-07-20 23:46:56,811 | INFO | Pipeline runs table ready
+2026-07-20 23:47:44,647 | INFO | Pipeline runs table ready
+2026-07-20 23:49:15,780 | INFO | Pipeline runs table ready
+2026-07-21 09:50:19,282 | INFO | Pipeline runs table ready
+2026-07-21 09:51:36,289 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-21 09:51:52,866 | INFO | Pipeline runs table ready
+2026-07-21 10:25:33,774 | INFO | Pipeline runs table ready
+2026-07-21 10:28:05,036 | INFO | Pipeline runs table ready
+2026-07-21 10:30:19,496 | INFO | Pipeline runs table ready
+2026-07-21 10:31:19,561 | INFO | Pipeline runs table ready
+2026-07-21 10:37:26,347 | INFO | Pipeline runs table ready
+2026-07-21 10:39:32,354 | INFO | Pipeline runs table ready
+2026-07-21 10:47:04,492 | INFO | Pipeline runs table ready
+2026-07-21 10:56:44,698 | INFO | Pipeline runs table ready
+2026-07-21 10:59:37,798 | INFO | Pipeline runs table ready
+2026-07-21 11:02:43,156 | INFO | Pipeline runs table ready
+2026-07-21 11:06:22,898 | INFO | Pipeline runs table ready
+2026-07-21 11:08:34,754 | INFO | Pipeline runs table ready
+2026-07-21 11:10:14,048 | INFO | Pipeline runs table ready
+2026-07-21 13:56:54,530 | INFO | Pipeline runs table ready
+2026-07-21 14:22:13,914 | INFO | Pipeline runs table ready
+2026-07-21 14:29:51,464 | INFO | Pipeline runs table ready
+2026-07-21 14:34:20,321 | INFO | Pipeline runs table ready
+2026-07-21 14:38:27,186 | INFO | Pipeline runs table ready
+2026-07-21 14:39:26,035 | INFO | Pipeline runs table ready
+2026-07-21 14:47:58,062 | INFO | Pipeline runs table ready
+2026-07-21 20:12:46,322 | INFO | Pipeline runs table ready
+2026-07-21 20:13:03,004 | INFO | Pipeline runs table ready
+2026-07-21 20:14:50,034 | INFO | Pipeline runs table ready
+2026-07-21 20:17:21,371 | INFO | Pipeline runs table ready
+2026-07-21 20:21:57,343 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-21 20:22:14,874 | INFO | Pipeline runs table ready
+2026-07-21 20:25:37,095 | INFO | Pipeline runs table ready
+2026-07-21 20:26:16,970 | INFO | Pipeline runs table ready
+2026-07-21 20:34:15,184 | INFO | Pipeline runs table ready
+2026-07-21 20:48:17,667 | INFO | Pipeline runs table ready
+2026-07-21 20:50:25,888 | INFO | Pipeline runs table ready
+2026-07-21 20:50:53,892 | INFO | Pipeline runs table ready
+2026-07-21 21:14:21,177 | INFO | Pipeline runs table ready
+2026-07-21 21:17:58,529 | INFO | Pipeline runs table ready
+2026-07-21 21:23:07,091 | INFO | Pipeline runs table ready
+2026-07-21 21:26:22,856 | INFO | Pipeline runs table ready
+2026-07-21 21:46:03,358 | INFO | Pipeline runs table ready
+2026-07-21 21:55:55,555 | INFO | Pipeline runs table ready
+2026-07-21 21:58:58,601 | INFO | Pipeline runs table ready
+2026-07-21 22:31:41,375 | INFO | Pipeline runs table ready
+2026-07-21 22:43:51,475 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

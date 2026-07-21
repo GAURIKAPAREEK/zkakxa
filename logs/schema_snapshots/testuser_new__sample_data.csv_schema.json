@@ -1,0 +1,19 @@
+{
+  "username": "testuser_new",
+  "source_filename": "sample_data.csv",
+  "columns": [
+    "product_id",
+    "initial_price",
+    "rating",
+    "title",
+    "email"
+  ],
+  "dtypes": {
+    "product_id": "float64",
+    "initial_price": "float64",
+    "rating": "float64",
+    "title": "str",
+    "email": "str"
+  },
+  "saved_at": "2026-07-12 16:38:50.053652"
+}

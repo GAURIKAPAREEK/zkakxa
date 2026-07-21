@@ -22,10 +22,16 @@ credentials:
       email: admin@example.com
       name: Admin User
       password: $2b$12$05BC76OnEjl2LnxwUjfRT.6683opHfnjP6yMj4UoloS.6ycSojSZS
+    admin2:
+      email: admin@example.com
+      name: Admin User
+      password: $2b$12$xC2e4rSsqLPbFifTdxg13.aWXoN28CHr61IUng0/EVaSQlorBgLta
     gauriii:
       email: pareekgaurika15@gmail.com
       name: gaurii
       password: $2b$12$VYhBtWmwa/epAhodKBOx3OahWrUfb/AGKi3oS23B7rGpkBafAx0FC
+      reset_expiry: '2026-07-19T12:49:24.488892+00:00'
+      reset_token: fqYX67bubulxbK77bTxAI4vH5N1AP244BfcEcJWskro
     gaurika__01:
       email: gaurikapareek12@gmail.com
       name: gaurika
@@ -42,6 +48,10 @@ credentials:
       email: test@example.com
       name: Test User
       password: $2b$12$m9TKxk/2ApsyLRCJM4RkuO5jNZFXUm8BccD/ZZdodEVnDRiTCLYTa
+    testadmin:
+      email: testadmin@example.com
+      name: Test Admin
+      password: $2b$12$xtCfBeQXa8Av5qAeNW9U9OzWu.GOxW75YWeeou6DIiQn2x4RGchpG
     testagent:
       email: testagent@example.com
       name: Test Agent
@@ -66,6 +76,14 @@ credentials:
       email: test@gmail.com
       name: Test User
       password: $2b$12$KxEHY/8CNbCwPwJm6oD6Yeu05WKx7z6Qpy3SYPAHSKKkzrIoHC/Py
+    testuser_sentinel:
+      email: testuser_sentinel@example.com
+      name: Test User Sentinel
+      password: $2b$12$9QEZkHp2cu8JluwybRbR5eB/61PiM1eNji36afal0i0O6MKGUSL7O
+    testuser_sentinel2:
+      email: test@example.com
+      name: Test User
+      password: $2b$12$BpvobXHjRJv8qjxEUkwbHOUtH1uGKRWxhCfb2dUw5d9XzNce8xK8m
     user123:
       email: test@gmail.com
       name: Test User

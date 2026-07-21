@@ -1,0 +1,37 @@
+{
+  "username": "12345",
+  "source_filename": "data.csv",
+  "columns": [
+    "user_id",
+    "transaction_date",
+    "region",
+    "product_category",
+    "sale_amount",
+    "status",
+    "city",
+    "age",
+    "subscription",
+    "raw_timestamp",
+    "email",
+    "username",
+    "price",
+    "store_id"
+  ],
+  "dtypes": {
+    "user_id": "str",
+    "transaction_date": "str",
+    "region": "str",
+    "product_category": "str",
+    "sale_amount": "float64",
+    "status": "str",
+    "city": "str",
+    "age": "int64",
+    "subscription": "str",
+    "raw_timestamp": "str",
+    "email": "str",
+    "username": "str",
+    "price": "float64",
+    "store_id": "str"
+  },
+  "saved_at": "2026-07-20 22:40:15.984722"
+}

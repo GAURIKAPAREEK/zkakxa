@@ -1,0 +1,3 @@
+product_id,initial_price,rating,title,email,quarantine_reason,quarantined_at
+2.0,-5.0,3.0,Product B,b@example.com,"no_negative_price (column: initial_price, value: -5.0)",2026-07-12 16:38:50.018538
+,20.0,4.0,Product D,d@example.com,"missing_product_id (column: product_id, value: nan); missing_product_id (column: product_id, value: nan)",2026-07-12 16:38:50.018538
