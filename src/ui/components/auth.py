@@ -71,13 +71,13 @@ def _login() -> None:
     if st.session_state.get("auth_error"):
         _error(st.session_state["auth_error"])
     if st.session_state.pop("signup_success", None):
-        st.success("🎉 Account created successfully! Sign in with your credentials below.")
+        st.success("Account created successfully! Sign in with your credentials below.")
         st.markdown(
             '<div style="margin:-4px 0 14px 0;padding:10px 14px;background:var(--ui-accent-soft);'
             'border:1px solid var(--ui-primary-border);border-radius:10px;text-align:center;">'
-            '<span style="color:var(--ui-text);font-size:13px;">Need to return to main page? </span>'
+            '<span style="color:var(--ui-text);font-size:13px;">Sign in now </span>'
             '<a href="?" target="_self" style="color:var(--ui-primary);font-weight:600;text-decoration:none;">'
-            '🔗 Go to Login / Website Portal →</a>'
+            ' Go to Login</a>'
             '</div>',
             unsafe_allow_html=True,
         )
