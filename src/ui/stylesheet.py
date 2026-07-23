@@ -63,9 +63,7 @@ a[aria-label="Link to heading"],
     pointer-events: none !important;
 }}
 header[data-testid="stHeader"] {{
-    background: transparent !important;
-    border: none !important;
-    pointer-events: none !important;
+    display: none !important;
 }}
 [data-testid="stSidebar"], [data-testid="collapsedControl"] {{ display: none !important; }}
 @keyframes ui-fade {{ from {{ opacity:0; transform:translateY(8px); }} to {{ opacity:1; transform:none; }} }}
