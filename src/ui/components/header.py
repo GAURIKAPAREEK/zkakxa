@@ -114,8 +114,23 @@ def render_header(
                     st.html(profile_html)
                 else:
                     st.markdown(profile_html, unsafe_allow_html=True)
-
-
+                if st.session_state.get("confirm_delete_desktop"):
+                    st.warning("⚠️ Delete account permanently? This cannot be undone.")
+                    col1, col2, col3, col4 = st.columns([0.1, 0.4, 0.4, 0.1])
+                    with col2:
+                        if st.button("Yes, delete", key="confirm_delete_desktop_btn", type="primary", use_container_width=True):
+                            from src.auth import delete_user_permanently
+                            delete_user_permanently(username)
+                    with col3:
+                        if st.button("Cancel", key="cancel_delete_desktop_btn", type="primary", use_container_width=True):
+                            st.session_state.confirm_delete_desktop = False
+                            st.rerun()
+                else:
+                    c1, c2, c3 = st.columns([0.1, 0.8, 0.1])
+                    with c2:
+                        if st.button("Delete account permanently", key="hdr_delete_account_btn", type="primary", use_container_width=True):
+                            st.session_state.confirm_delete_desktop = True
+                            st.rerun()
         with logout_c:
             if st.button("Logout", key="ui_logout_btn", type="secondary", help="Log out"):
                 from src.auth import logout_user
