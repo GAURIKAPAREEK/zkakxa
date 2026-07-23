@@ -2187,14 +2187,10 @@ def _responsive() -> str:
         display: none !important;
     }
     /* Hide theme toggle and logout columns in header on mobile */
-    .block-container:has(.ui-hdr-anchor) div[data-testid="column"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="column"]:has([class*="hdr_theme"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stColumn"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]:has([class*="hdr_theme"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="column"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="column"]:has([class*="main_theme"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stColumn"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]:has([class*="main_theme"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="column"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="column"]:has([class*="ui_theme_toggle"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stColumn"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]:has([class*="ui_theme_toggle"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="column"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="column"]:has([class*="ui_logout_btn"]),
-    .block-container:has(.ui-hdr-anchor) div[data-testid="stColumn"]:has(.ui-hdr-actions) div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]:has([class*="ui_logout_btn"]),
+    .block-container:has(.ui-hdr-anchor) div:has(.ui-hdr-actions) div:has([class*="hdr_theme"]),
+    .block-container:has(.ui-hdr-anchor) div:has(.ui-hdr-actions) div:has([class*="main_theme"]),
+    .block-container:has(.ui-hdr-anchor) div:has(.ui-hdr-actions) div:has([class*="ui_theme_toggle"]),
+    .block-container:has(.ui-hdr-anchor) div:has(.ui-hdr-actions) div:has([class*="ui_logout_btn"]),
     .block-container:has(.ui-hdr-anchor) [class*="st-key-hdr_theme"],
     .block-container:has(.ui-hdr-anchor) [class*="stKey-hdr_theme"],
     .block-container:has(.ui-hdr-anchor) [class*="st-key-main_theme"],
