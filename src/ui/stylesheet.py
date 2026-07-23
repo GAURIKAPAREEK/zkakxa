@@ -2226,7 +2226,8 @@ def _responsive() -> str:
         flex: 0 0 auto !important;
     }
     /* Fix mobile popover offset position (keep on-screen) */
-    .block-container:has(.ui-hdr-anchor) [data-testid="stPopoverBody"] {
+    div[data-baseweb="popover"]:has([data-testid="stPopoverBody"]),
+    [data-testid="stPopoverBody"] {
         position: fixed !important;
         right: 12px !important;
         left: auto !important;
